@@ -17,7 +17,10 @@
             <!-- navbar-dark bg-dark  -->
             <nav class="navbar">
                 <div class="container-fluid">
-                <a class="navbar-brand" href="#">Centro IMI</a>
+                <span style="display: flex">
+                  <i class="bi bi-rocket-takeoff"></i>
+                  <a class="navbar-brand" href="#">Centro IMI</a>
+                </span>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -67,19 +70,19 @@
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3500">
+            <div class="carousel-item active" data-bs-interval="3000">
               <img src="./img/img_pacClonJs.png" class="d-block w-100" alt="imagen pacman">
             </div>
-            <div class="carousel-item" data-bs-interval="3500">
+            <div class="carousel-item" data-bs-interval="3000">
               <img src="./img/img_pulgaJs.png" class="d-block w-100" alt="imagen pulga juego">
             </div>
-            <div class="carousel-item" data-bs-interval="3500">
+            <div class="carousel-item" data-bs-interval="3000">
               <img src="./img/img_snakeRespJs.png" class="d-block w-100" alt="imagen snake juego">
             </div>
-            <div class="carousel-item" data-bs-interval="3500">
+            <div class="carousel-item" data-bs-interval="3000">
               <img src="./img/img_asteJs.png" class="d-block w-100" alt="imagen asteroids">
             </div>
-            <div class="carousel-item" data-bs-interval="3500">
+            <div class="carousel-item" data-bs-interval="3000">
               <img src="./img/img_mazeJS.png" class="d-block w-100" alt="imagen maze generator">
             </div>
           </div>
@@ -93,12 +96,22 @@
           </button>
         </div>
 
-        <div class="container-fluid" style="height: 120px;">
-
+        <div class="container-fluid justify-content-center" style="height: fit-content;">
+          <div class="card p-2 mt-2 mb-2"  style="background-color: beige;">
+            <i class="bi bi-controller" style="color: darkred;"></i>
+            <div class="card-body p-0">
+              <h5 class="card-title">Pacman</h5>
+              <p class="card-text" id="descripcion">Puedes elegir un juego de entre los que aparecen en el carrusel que aparece arriba.</p>
+              <!-- <a href="#" class="btn btn-primary justify-content-center">Go somewhere</a> -->
+            </div>
+            <div class="d-grid gap-2 col-3 mx-auto">
+              <button class="btn btn-primary mt-3" type="button">Jugar</button>
+            </div>
+          </div>
         </div>
 
-        <footer class="text-bg-dark p-2 text-center d-flex flex-column flex-sm-row justify-content-between">
-          <p>&copy; 2023 Centro IMI</p>
+        <footer class="text-bg-dark p-2 text-center d-flex flex-column flex-sm-row justify-content-between" id="footer">
+          <p class="ps-sm-4">&copy; 2023 Centro IMI</p>
           <ul class="list-unstyled d-flex justify-content-center " id="redes-sociales">
               <li><a class="text-white p-1" href="#"><i class="bi bi-facebook"></i></a></li>
               <li><a class="text-white p-1" href="#"><i class="bi bi-twitter"></i></a></li>
@@ -106,6 +119,14 @@
               <li><a class="text-white p-1" href="#"><i class="bi bi-youtube"></i></a></li>
               <li><a class="text-white p-1" href="#"><i class="bi bi-instagram"></i></a></li>
           </ul>
+
+          <ul class="list-unstyled d-flex flex-column justify-content-center pe-sm-4" id="lista__colaboradores">
+              <li id="colaboradores"><a class="text-white p-1" href="#"></a>Colaboradores:</li>
+              <li><a class="text-white p-1" href="#"></a>Cafetería Arlekín</li>
+              <li><a class="text-white p-1" href="#"></a>Recreativos Argüello</li>
+              <li><a class="text-white p-1" href="#"></a>Salón Piscis</li>
+          </ul> 
+          
           <a class="d-block d-md-none position-fixed bottom-0 end-0 bg-dark m-4 rounded-circle border px-1"
               style="box-shadow: .5rem .5rem 1rem rgba(0,0,0,.5)!important" id="arriba" href="#"><i
                   class="bi bi-arrow-up text-yellow"></i></a>

@@ -18,7 +18,7 @@ body {
 
 .navbar, .navbar-brand, .offcanvas, .text-bg-dark {
     color: var(--color-yellow-font);
-    background-color: var(--color-fondo9);
+    background-color: var(--color-fondo);
 }
 
 .nav-link {
@@ -42,14 +42,42 @@ h5 {
     text-shadow: 2px 2px 1px black;
 }
 
+#lista__colaboradores {
+    font-size: 12px;
+    color: orange;
+}
+
+#colaboradores {
+    font-size: 16px;
+    font-style: italic;
+    color: rgb(211, 144, 21);
+}
+
+#descripcion {
+    font-size: 14px;
+    color: rgb(24, 23, 23);
+}
+
+.btn {
+    cursor:pointer;
+}
+
+.btn:hover {
+    background-color: aquamarine;
+}
+
 @media (min-width: 768px) {
-    .slide {
+    .slide, .card {
         width: 50%;
         margin-left: 25%;
     }
 
     .navbar-brand {
         font-size: 48px;
+    }
+
+    #footer, #lista__colaboradores, #colaboradores {
+        font-size: 24px;
     }
 }
 
